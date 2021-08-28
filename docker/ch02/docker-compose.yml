@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+   postgres:
+      image: postgres:11
+      environment:
+         POSTGRES_USER: spark
+         POSTGRES_PASSWORD: spark
+         POSTGRES_DB: spark_in_action
+      ports:
+         - 5432:5432
